@@ -34,7 +34,7 @@ CS 이론·코딩테스트·프로젝트를 정리하는 저장소입니다.
 ## Phase 2
 
 ### CS/브라우저 & 배포
-- Critical Rendering Path / Reflow vs Repaint
+- Critical Rendering Path / Reflow vs Repaint ✅
 - 이벤트 루프 / Microtask vs Macrotask
 - async·await 동작 원리
 - 브라우저 저장소 비교 (Cookie·localStorage·sessionStorage·IndexedDB)
