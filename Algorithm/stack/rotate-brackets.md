@@ -28,11 +28,10 @@ function solution(s) {
   let count = 0;
 
   for (let x = 0; x < s.length; x++) {
-    // ② x칸 회전된 문자열 만들기
-    //    힌트: s.slice(x) + s.slice(0, x)
-
-
-    // ③ 올바른 괄호면 count++
+    const rotate = s.slice(x) + s.slice(0, x);
+    if(isValid(rotate)){
+      count++;
+    }
   }
 
   return count;
@@ -42,12 +41,17 @@ function isValid(s) {
   const stack = [];
   const pair = { ')': '(', ']': '[', '}': '{' };
 
-  // ④ 각 글자 순회
-  //    - 여는 괄호면 push
-  //    - 닫는 괄호면 stack.pop()이 pair[ch]와 같은지 확인, 다르면 false
+  for(let ch of s){
+    if('([{'.includes(ch)){
+      stack.push(ch);
+    }else{
+      if(stack.pop() !== pair[ch]){
+        return false;
+      }
+    }
+  }
 
 
-  // ⑤ 스택이 비어있으면 true
   return stack.length === 0;
 }
 ```
