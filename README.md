@@ -75,13 +75,17 @@ CS 이론·코딩테스트·프로젝트를 정리하는 저장소입니다.
 
 ```
 TIL/
-└── CS/
-    ├── Network/       # HTTP·DNS·TCP·CORS 등
-    ├── Security/      # XSS·CSRF·JWT·OAuth 등
-    ├── Browser/       # 렌더링·이벤트루프·성능 등
-    ├── OS/            # 프로세스·메모리·파일시스템 등
-    ├── DataStructure/ # 배열·트리·그래프·해시 등
-    └── Algorithm/     # 정렬·탐색·DP·그리디 등
+├── CS/
+│   ├── Network/       # HTTP·DNS·TCP·CORS 등
+│   ├── Security/      # XSS·CSRF·JWT·OAuth 등
+│   ├── Browser/       # 렌더링·이벤트루프·성능 등
+│   ├── Build/         # Babel·Webpack·Vite 등
+│   ├── DevOps/        # Docker·CI/CD 등
+│   ├── OS/            # 프로세스·메모리·파일시스템 등
+│   ├── DataStructure/ # 배열·트리·그래프·해시 등
+│   └── Algorithm/     # 정렬·탐색·DP·그리디 등
+├── React/             # useState·이벤트·렌더링 등
+└── Algorithm/         # 문제 풀이 (유형별 폴더)
 ```
 
 ## 작성 규칙
